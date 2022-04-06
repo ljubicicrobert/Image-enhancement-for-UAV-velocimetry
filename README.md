@@ -8,4 +8,4 @@ Notebooks can be used/viewed in three ways:
 
 1. By using the [Binder](https://mybinder.org/v2/gh/ljubicicrobert/UAV_image_enhancement/main?labpath=main.ipynb) webapp,
 2. By downloading/cloning the repository and using the notebooks in JupyterLab or Jupyter Notebook evironment (read `requirements.txt`),
-3. By reading static PDFs available in the `./PDFs` folder.
+3. By reading static PDFs available in the `./PDFs` folder or read the entire report by [clicking here](./PDFs/UAV_image_enhancement.pdf).
