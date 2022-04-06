@@ -18,7 +18,15 @@ def on_lims_change(event_ax):
 
     for a in list_ca:
         if a != event_ax:
-            a.set_xlim(xlim)
-            a.set_ylim(ylim)
+            try:
+                # Test to see if ax.imshow() was used
+                a.get_images()[0]._A
+                
+                # If ax.imshow() then set lims
+                a.set_xlim(xlim)
+                a.set_ylim(ylim)
+            except:
+                # Otherwise do nothing
+                continue
 
     event_ax.callbacks.connect('ylim_changed', on_lims_change)
